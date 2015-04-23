@@ -282,7 +282,7 @@ int PushRelabelCUDA::GetMaxFlow(GCVtx* h_vbuf, GCEdge* h_ebuf, int noOfVertices,
 			fprintf(stderr, "cudaMemcpy failed!");
 			FreeDeviceMemory(d_vbuf, d_ebuf, d_EdgeIndexArray);
 		}
-		printf("Source Excess %d and Sink Excess %d \n", h_vbuf[N-2].excess, h_vbuf[N-1].excess);
+		//printf("Source Excess %d and Sink Excess %d \n", h_vbuf[N-2].excess, h_vbuf[N-1].excess);
 		//Call Global Relabel On Host
 		GlobalRelabel(h_vbuf, h_ebuf, N, totalExcess);
 

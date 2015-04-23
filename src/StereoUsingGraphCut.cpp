@@ -347,7 +347,7 @@ static int64 icvGCMaxFlow( GCVtx* vtx, int nvtx, GCEdge* edges, GCVtx**& _orphan
     _orphans = orphans;
     _maxOrphans = maxOrphans;
 
-	printf("Kolmogorov %d\n", flow);
+	//printf("Kolmogorov %d\n", flow);
     return flow;
 }
 
